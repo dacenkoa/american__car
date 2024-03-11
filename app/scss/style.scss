@@ -3,8 +3,194 @@
 @import "vars";
 @import "global";
 
-body {
-    background-color: red;
+.header {
+    background-image: url(../images/bacg.jpeg);
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    color: $white;
+    margin-bottom: 250px;
+
+    &__inner {
+        position: relative;
+    }
+
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 47px;
+        margin-bottom: 105px;
+    }
+
+    &__logo {
+        width: 197px;
+        height: 53px;
+    }
+
+    &__title {
+        @extend %os300;
+        font-size: 72px;
+        color: $white;
+    }
+
+    &__subtitle {
+        @extend %os400;
+        font-size: 36px;
+        color: $white;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        @extend %os400;
+        font-size: 18px;
+        color: $white;
+        margin-bottom: 50px;
+    }
+
+    &__sociale {
+        margin-top: 70px;
+        width: 315px;
+        text-align: center;
+    }
+
+    &__icon+.header__icon {
+        margin-left: 10px;
+    }
+
+    &__img-car {
+        position: absolute;
+        width: 814px;
+        height: 462px;
+        right: 0;
+        bottom: -350px;
+    }
+
+    .phone {
+        @extend %os400;
+        font-size: 36px;
+    }
 }
+
+.services {
+    margin-bottom: 100px;
+
+    &__title {
+        @extend %os400;
+        color: $violet;
+        font-size: 36px;
+        margin-bottom: 50px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 80px;
+            height: 3px;
+            background-color: $violet;
+            position: absolute;
+            left: 245px;
+            top: 20px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__box {
+        max-width: 564px;
+        margin-right: 96px;
+    }
+
+    &__subtitle {
+        @extend %os300;
+        font-size: 18px;
+        color: $akcent;
+    }
+
+    &__text {
+        @extend %os300;
+        font-size: 18px;
+        margin-top: 12px;
+    }
+
+    .services__text:nth-child(3) {
+        margin-bottom: 69px;
+    }
+
+    &__btn-box {
+        display: flex;
+        position: relative;
+    }
+    &__btn {
+        position: absolute;
+        margin-top: 50px;
+        &::before {
+            content: "";
+            width: 80px;
+            height: 3px;
+            background-color: $grey;
+            position: absolute;
+            left: 245px;
+            top: 20px;
+        }
+    }
+    &__btn-text{
+        position: absolute;
+        color: $grey;
+        left: 10px;
+        bottom: 10px;
+    }
+    &__list {
+        counter-reset: mynumbers;
+        list-style: none;
+    }
+
+    &__item {
+        position: relative;
+        width: 500px;
+        border: 1px solid $grey;
+        margin-bottom: 12px;
+        padding: 8px 47px 9px 80px;
+        transition: all .3s;
+
+        &:hover {
+            border: 1px solid $akcent;
+            width: 530px;
+        }
+
+        &::before {
+            content: '0' counter(mynumbers);
+            counter-increment: mynumbers;
+            font-weight: 400;
+            font-size: 36px;
+            text-transform: uppercase;
+            color: $grey;
+            transform: rotate(-90deg);
+            position: absolute;
+            left: 20px;
+        }
+
+        &:hover::before {
+            color: $akcent;
+        }
+    }
+
+    &__item-title {
+        @extend %os300;
+        font-size: 24px;
+
+        &:hover {
+            color: $akcent;
+        }
+    }
+
+    &__item-text {
+        @extend %os300;
+        font-size: 18px;
+    }
+}
+
 
 @import "media";

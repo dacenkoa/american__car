@@ -1,0 +1,28 @@
+body{
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: inherit;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    
+}
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+a{
+    color: inherit;
+}
+.btn {
+    background-color: $akcent;
+    padding: 14px 54px 15px 54px;
+    text-transform: uppercase;
+    border: 1px solid $akcent;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $white;
+        color: $akcent;
+    }
+}
