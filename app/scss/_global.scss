@@ -26,3 +26,20 @@ a{
         color: $akcent;
     }
 }
+.title{
+    @extend %os400;
+    color: $violet;
+    font-size: 36px;
+    margin-bottom: 50px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 80px;
+        height: 3px;
+        background-color: $violet;
+        position: absolute;
+        left: 245px;
+        top: 20px;
+    }
+}

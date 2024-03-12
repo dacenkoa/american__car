@@ -33,6 +33,7 @@
         @extend %os300;
         font-size: 72px;
         color: $white;
+        text-transform: uppercase;
     }
 
     &__subtitle {
@@ -40,6 +41,7 @@
         font-size: 36px;
         color: $white;
         margin-bottom: 30px;
+        text-transform: uppercase;
     }
 
     &__text {
@@ -76,23 +78,7 @@
 .services {
     margin-bottom: 100px;
 
-    &__title {
-        @extend %os400;
-        color: $violet;
-        font-size: 36px;
-        margin-bottom: 50px;
-        position: relative;
 
-        &::before {
-            content: "";
-            width: 80px;
-            height: 3px;
-            background-color: red;
-            position: absolute;
-            left: 245px;
-            top: 20px;
-        }
-    }
 
     &__inner {
         display: flex;
@@ -132,15 +118,17 @@
             height: 3px;
             background-color: $grey;
             position: absolute;
-            left: 245px;
+            left: 270px;
             top: 20px;
         }
     }
     &__btn-text{
         position: absolute;
         color: $grey;
-        left: 10px;
-        bottom: 10px;
+        bottom: -80px;
+        right: 180px;
+        @extend %os300;
+        font-size: 14px;
     }
     &__list {
         counter-reset: mynumbers;
@@ -191,6 +179,96 @@
         font-size: 18px;
     }
 }
+.information{
+    margin-bottom: 100px;
+    &__inner{
+        display: flex;
+    }
+    &__images{
+        max-width: 320px;
+        height: 606px;
+        margin-right: 100px;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__title{
+        margin-left: 180px;
+    }
+    &__content{
+        background-color: $akcent;
+        max-width: 785px;
+        padding: 23px 284px 0px 185px;        
+    }
+    &__titles{
+        @extend %os400;
+        font-size: 36px;
+    }
+    &__subtitle{
+        @extend %os300;
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    &__text{
+        @extend %os300;
+        font-size: 18px;
+    }
+}
+.information__content:last-child{
+    padding-bottom: 45px;
+}
+.slider{
+    &__title::before{
+        left: 400px;
+    }
+    &__content{
+        border:1px solid $grey;
+        max-width: 395px;
+        margin: 0 auto;
+        text-align: center;
+        margin: 0 10px;
+    }
+    &__img{
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 2px;
+        margin-bottom: 23px;
+    }
+    &__titles{
+        margin-bottom: 5px;
+        @extend %os300;
+        font-size: 18px;
+    }
+    &__text{
+        @extend %os300;
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+}
+ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.slick-dots button{
+
+    font-size: 0;
+    background-color: $grey;
+    width: 50px;
+    height: 2px;
+    margin: 0 10px;
+}
+.slick-active button {
+    background-color: $akcent;
+    height: 3px;
+}
+.slick-current {
+    background-color: $akcent;
+    color: $white;
+    transition: all .3s;
+}
+
 
 
 @import "media";
