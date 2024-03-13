@@ -326,7 +326,7 @@ input{
     margin-bottom: 12px;
     color: $white;
     &::placeholder{
-        color: red;
+        color:$white;
     }
 }
 .cart__title{
