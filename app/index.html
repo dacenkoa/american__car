@@ -16,10 +16,17 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__contacts">
-                    <img class="header__logo" src="../images/src/logo 2.svg" alt="logo">
-                    <a class="phone" href="tel:+38(050)5556677">+38 (050) 555 66 77</a>
-                </div>
+                <nav>
+                    <ul class="header__menu">
+                        <li class="menu__item"><img class="header__logo" src="../images/src/logo 2.svg" alt="logo"></li>
+                        <li class="menu__item"><a class="phone" href="tel:+38(050)5556677">+38 (050) 555 66 77</a></li>
+                    </ul>
+                    <button class="burger__menu">
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                        <div class="burger__line"></div>
+                    </button>
+                </nav>
                 <div class="header__content">
                     <h1 class="header__title">авто из сша “под ключ”</h1>
                     <h3 class="header__subtitle">ЗАКАЖИ СЕБЕ АВТО ИЗ США С ВЫГОДОЙ ДО 40%
@@ -41,12 +48,14 @@
                         <img class="header__img" src="../images/src/facebook.svg" alt="face">
                     </a>
                 </div>
-                <img class="header__img-car" src="../images/src/header__car.png" alt="car">
+                <div class="header__images">
+                    <img class="header__img-car" src="../images/src/header__car.png" alt="car">
+                </div>
             </div>
         </div>
     </header>
 
-    <main>
+    <!-- <main>
         <section class="services">
             <div class="container">
                 <h2 class="services__title title">НАШИ УСЛУГИ</h2>
@@ -207,11 +216,53 @@
             </div>
         </section>
 
-    </main>
+    </main> -->
 
-    <footer>
+    <footer class="footer">
 
-        <h2>Ou it is footer</h2>
+        <div class="container">
+
+            <div class="footer__inner">
+
+                <div class="footer__contacts">
+
+                    <img class="header__logo" src="../images/src/logo 2.svg" alt="logo">
+
+            </div>
+
+            <div class="footer__sociale">
+
+                <a class="header__icon" href="">
+
+                    <img class="header__img" src="../images/src/instagram.svg" alt="inst">
+
+                </a>
+
+                <a class="header__icon" href="">
+
+                    <img class="header__img" src="../images/src/telegram.svg" alt="teleg">
+
+                </a>
+
+                <a class="header__icon" href="">
+
+                    <img class="header__img" src="../images/src/whatsapp.svg" alt="wats">
+
+                </a>
+
+                <a class="header__icon" href="">
+
+                    <img class="header__img" src="../images/src/facebook.svg" alt="face">
+
+                </a>
+
+            </div>
+
+            <a class="footer__link">Политика конфиденциальности</a>
+
+        </div>
+
+        
 
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

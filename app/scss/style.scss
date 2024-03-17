@@ -16,19 +16,51 @@
         position: relative;
     }
 
-    &__contacts {
+&__menu{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 47px;
         margin-bottom: 105px;
     }
+    .burger__line {
+        background-color: $white;
+        width: 25px;
+        height: 2px;
+        margin: 5px 0;
+    }
+    .burger__menu {
+        cursor: pointer;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+        transition: all 5s;
+        display: none;
+    }
+    .burger__menu.show {
+        .burger__line:first-child {
+            transform: rotate(45deg);
+            top: 4px;
+            position: relative;
+        }
+
+        .burger__line:nth-child(even) {
+            display: none;
+            
+            position: relative;
+        }
+
+        .burger__line:last-child {
+            transform: rotate(-45deg);
+            top: -2px;
+            position: relative;
+        }
+    }
 
     &__logo {
         width: 197px;
         height: 53px;
     }
-
     &__title {
         @extend %os300;
         font-size: 72px;
@@ -60,13 +92,15 @@
     &__icon+.header__icon {
         margin-left: 10px;
     }
-
-    &__img-car {
+    &__images{
         position: absolute;
-        width: 814px;
+        max-width: 814px;
         height: 462px;
         right: 0;
         bottom: -350px;
+    }
+    &__img-car {
+        width: 100%;
     }
 
     .phone {
@@ -339,6 +373,24 @@ input{
         background-color: $white;
         left: 277px;
         top: 20px;
+    }
+}
+.footer{
+    background-color: $violet;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 0;
+    }
+    &__sociale{
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    &__link{
+        color: $white;
+        @extend %os300;
+        font-size: 18px;
     }
 }
 

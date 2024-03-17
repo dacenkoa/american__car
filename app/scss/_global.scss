@@ -15,10 +15,14 @@ a{
     color: inherit;
 }
 .btn {
+    display: block;
+    max-width: 250px;
     background-color: $akcent;
-    padding: 14px 54px 15px 54px;
+    padding: 15px 10px 13px;
+    text-align: center;
     text-transform: uppercase;
-    border: 1px solid $akcent;
+    border: 20px solid $akcent;
+    border-radius: 7px 0px 12px 3px;
     transition: all .3s;
 
     &:hover {
