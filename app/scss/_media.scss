@@ -1,11 +1,90 @@
+@media(max-width: 1200px) {
+    .services__list{
+        max-width: 45%;
+    }
+    .services__item{
+        min-height: 100px;
+        margin-left: 20px;
+    }    .services__box{
+        margin-right: 30px;
+    }
+    .information__images{
+        margin-right: 0;
+    }
+    .information__img {
+        display: none;
+    }
+    .information__box{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
 @media(max-width: 1000px) {
+    .header{
+        margin-bottom: 100px;
+    }
+    .title{
+        justify-content: center;
+    }
     .header__img-car {
         max-width: 814px;
         padding-left: 200px;
     }
+    .header__title {
+        font-size: 66px;
+    }
+    .header__subtitle{
+        font-size: 30px;
+    }
+    .services{
+        margin-bottom: 25px;
+    }
+    .services__title{
+        text-align: center;
+    }
+    .services__inner{
+        flex-direction: column;
+    }
+    .services__title{
+        margin: 150px auto 30px;
+    }
+    .services__box{
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+        max-width: 90%;
+    }
+    .services__list{
+        margin: 80px auto 0;
+        width: 80%;
+        max-width: 90%;
+    }
+    .services__btn-box{
+        justify-content: center;
+    }
+    .services__btn-text{
+        right: -130px;
+    }
+    .information__content{
+        padding: 23px 156px 0px 150px
+    }
+    .information__title{
+        margin: 50px auto 30px;
+    }
+    .slick-dots button{
+        width: 40px;
+    }
+    .slider__title{
+        margin: 50px auto;
+    }
+    input{
+        max-width: 400px;
+    }
 }
 
 @media(max-width: 800px) {
+
     .header__img-car {
         display: none;
     }
@@ -13,11 +92,13 @@
     .header__title {
         text-align: center;
         margin-bottom: 15px;
+        font-size: 60px;
     }
 
     .header__subtitle {
         font-size: 32px;
         text-align: center;
+        font-size: 24px;
     }
 
     .header__text {
@@ -33,6 +114,35 @@
         margin: 50px auto;
         padding-bottom: 100px;
     }
+    .header__sociale{
+        padding-bottom: 0;
+    }
+    .information__content{
+        padding: 23px 106px 0px 100px
+    }
+    .services{
+        margin-bottom: 0;
+    }
+    .services__title{
+        margin: 35px auto 30px;
+    }
+    .form__content{
+    flex-direction: column-reverse;
+    }
+    .form__cart{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .form__content-title{
+        margin-top: 25px;
+    }
+    .form__content-item{
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    
 
 }
 
@@ -68,5 +178,22 @@
     .header .burger__menu {
         display: block;
         margin-left: auto;
+    }
+    .services__list{
+        margin: 64px auto 0;
+        width: 95%;
+        max-width: 100%;
+    }
+    .information__content{
+        padding: 23px 76px 0px 60px
+    }
+    .footer__inner{
+        flex-direction: column;
+    }
+    .footer__contacts{
+        margin-bottom: 15px;
+    }
+    .footer__sociale{
+        margin-bottom: 15px;
     }
 }

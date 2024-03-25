@@ -16,19 +16,21 @@
         position: relative;
     }
 
-&__menu{
+    &__menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 47px;
         margin-bottom: 105px;
     }
+
     .burger__line {
         background-color: $white;
         width: 25px;
         height: 2px;
         margin: 5px 0;
     }
+
     .burger__menu {
         cursor: pointer;
         background-color: transparent;
@@ -37,6 +39,11 @@
         transition: all 5s;
         display: none;
     }
+    nav{
+        display: block;
+        padding-top: 20px
+    }
+
     .burger__menu.show {
         .burger__line:first-child {
             transform: rotate(45deg);
@@ -46,7 +53,7 @@
 
         .burger__line:nth-child(even) {
             display: none;
-            
+
             position: relative;
         }
 
@@ -61,11 +68,12 @@
         width: 197px;
         height: 53px;
     }
+
     &__title {
-        @extend %os300;
+        @extend %os400;
         font-size: 72px;
-        color: $white;
         text-transform: uppercase;
+        margin-bottom: 5px;
     }
 
     &__subtitle {
@@ -87,20 +95,28 @@
         margin-top: 70px;
         width: 315px;
         text-align: center;
+        padding-bottom: 100px;
     }
 
     &__icon+.header__icon {
         margin-left: 10px;
     }
-    &__images{
+
+    &__images {
         position: absolute;
         max-width: 814px;
-        height: 462px;
+        height: 622px;
         right: 0;
         bottom: -350px;
     }
+
     &__img-car {
         width: 100%;
+    }
+
+    .menu__item {
+        display: flex;
+        align-items: center;
     }
 
     .phone {
@@ -108,6 +124,7 @@
         font-size: 36px;
     }
 }
+
 
 .services {
     margin-bottom: 100px;
@@ -121,6 +138,7 @@
     &__box {
         max-width: 564px;
         margin-right: 96px;
+        width: 50%;
     }
 
     &__subtitle {
@@ -140,46 +158,54 @@
     }
 
     &__btn-box {
-        display: flex;
-        position: relative;
-    }
-    &__btn {
-        position: absolute;
         margin-top: 50px;
-        &::before {
-            content: "";
-            width: 80px;
-            height: 3px;
-            background-color: $grey;
-            position: absolute;
-            left: 270px;
-            top: 20px;
-        }
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+
     }
-    &__btn-text{
-        position: absolute;
+
+    &__btn {
+        display: block;
+
+        width: 250px;
+
+    }
+
+    &__line {
+        width: 80px;
+        height: 3px;
+        background-color: $grey;
+        margin-left: 20px;
+    }
+
+    &__btn-text {
         color: $grey;
-        bottom: -80px;
-        right: 180px;
+        margin-left: 20px;
         @extend %os300;
         font-size: 14px;
+        text-transform: uppercase;
+
     }
+
     &__list {
         counter-reset: mynumbers;
         list-style: none;
+        width: 530px;
     }
 
     &__item {
         position: relative;
-        width: 500px;
+        width: 90%;
         border: 1px solid $grey;
         margin-bottom: 12px;
-        padding: 8px 47px 9px 80px;
+        padding: 8px 7px 9px 80px;
         transition: all .3s;
 
         &:hover {
             border: 1px solid $akcent;
-            width: 530px;
+            width: 100%;
         }
 
         &::before {
@@ -213,80 +239,98 @@
         font-size: 18px;
     }
 }
-.information{
+
+.information {
     margin-bottom: 100px;
-    &__inner{
+
+    &__inner {
         display: flex;
     }
-    &__images{
+
+    &__images {
         max-width: 320px;
         height: 606px;
         margin-right: 100px;
     }
-    &__img{
+
+    &__img {
         width: 100%;
     }
-    &__title{
+
+    &__title {
         margin-left: 180px;
     }
-    &__content{
+
+    &__content {
         background-color: $akcent;
         max-width: 785px;
-        padding: 23px 284px 0px 185px;        
+        padding: 23px 284px 0px 185px;
     }
-    &__titles{
+
+    &__titles {
         @extend %os400;
         font-size: 36px;
     }
-    &__subtitle{
+
+    &__subtitle {
         @extend %os300;
         font-size: 24px;
         margin-bottom: 5px;
     }
-    &__text{
+
+    &__text {
         @extend %os300;
         font-size: 18px;
     }
 }
-.information__content:last-child{
+
+.information__content:last-child {
     padding-bottom: 45px;
 }
-.slider{
+
+.slider {
     margin-bottom: 100px;
-    &__title::before{
+
+    &__title::before {
         left: 400px;
     }
-    &__content{
-        border:1px solid $grey;
+
+    &__content {
+        border: 1px solid $grey;
         max-width: 395px;
         margin: 0 auto;
         text-align: center;
         margin: 0 10px;
     }
-    &__img{
+
+    &__img {
         width: 98%;
         margin: 0 auto;
         margin-top: 2px;
         margin-bottom: 23px;
     }
-    &__titles{
+
+    &__titles {
         margin-bottom: 5px;
         @extend %os300;
         font-size: 18px;
     }
-    &__text{
+
+    &__text {
         @extend %os300;
         font-size: 18px;
         margin-bottom: 18px;
     }
 }
-ul{
+
+ul {
     display: flex;
     justify-content: center;
     margin-top: 50px;
 
 }
-.slick-dots button{
+
+.slick-dots button {
 
     font-size: 0;
     background-color: $grey;
@@ -294,55 +338,66 @@ ul{
     height: 2px;
     margin: 0 10px;
 }
+
 .slick-active button {
     background-color: $akcent;
     height: 3px;
 }
+
 .slick-current {
     background-color: $akcent;
     color: $white;
     transition: all .3s;
 }
-.form{
-    &__content{
+
+.form {
+    &__content {
         display: flex;
         justify-content: space-between;
     }
-    &__content-title{
+
+    &__content-title {
         margin-bottom: 50px;
+
         &::before {
             content: "";
             left: 180px;
+
         }
     }
-    &__content-item{
+
+    &__content-item {
         margin-bottom: 20px;
     }
-    &__content-titles{
+
+    &__content-titles {
         color: $akcent;
         @extend %os300;
         font-size: 18px;
     }
-    &__content-text{
+
+    &__content-text {
         @extend %os300;
         font-size: 18px;
     }
-    &__cart{
+
+    &__cart {
         background-color: $violet;
         width: 600px;
         height: 466px;
         text-align: center;
         display: flex;
         flex-direction: column;
-        align-items: center;       
+        align-items: center;
     }
 
-    &__input{
+    &__input {
         padding: 24px 10px;
         @extend %os300;
         font-size: 18px;
     }
-    &__cart-btn{
+
+    &__cart-btn {
         @extend %os300;
         font-size: 14px;
         background-color: $akcent;
@@ -352,42 +407,48 @@ ul{
         margin-top: 78px;
     }
 }
-input{
+
+input {
     width: 450px;
     text-align: center;
     background-color: transparent;
     border: 1px solid $grey;
     margin-bottom: 12px;
     color: $white;
-    &::placeholder{
-        color:$white;
+
+    &::placeholder {
+        color: $white;
     }
 }
-.cart__title{
+
+.cart__title {
     font-weight: 400;
     margin-top: 50px;
     margin-bottom: 16px;
-    color: $white; 
-    &::before {
+    color: $white;
+
+    &::after {
         content: "";
         background-color: $white;
-        left: 277px;
-        top: 20px;
     }
 }
-.footer{
+
+.footer {
     background-color: $violet;
-    &__inner{
+
+    &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 13px 0;
     }
-    &__sociale{
+
+    &__sociale {
         margin-top: 0;
         padding-bottom: 0;
     }
-    &__link{
+
+    &__link {
         color: $white;
         @extend %os300;
         font-size: 18px;

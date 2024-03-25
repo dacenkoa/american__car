@@ -4,8 +4,22 @@ $('.slick__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     // focusOnSelect: true,
-    centerMode: true, 
+    centerMode: true,
     centerPadding: "50px",
+    responsive: [
+        {
+            breakpoint: 990,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 1
+            }
+        },
+    ]
 });
 
 

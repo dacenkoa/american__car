@@ -13,6 +13,7 @@ body{
 }
 a{
     color: inherit;
+    cursor: pointer;
 }
 .btn {
     display: block;
@@ -34,16 +35,19 @@ a{
     color: $violet;
     font-size: 36px;
     margin-bottom: 50px;
-    position: relative;
     text-transform: uppercase;
-
-    &::before {
+    display: flex;
+    align-items: center;
+    
+    
+    
+    &::after {
         content: "";
         width: 80px;
         height: 3px;
         background-color: $violet;
-        position: absolute;
-        left: 245px;
-        top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+
     }
 }
