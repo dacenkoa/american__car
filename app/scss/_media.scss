@@ -26,6 +26,7 @@
     }
     .title{
         justify-content: center;
+        
     }
     .header__img-car {
         max-width: 814px;
@@ -79,11 +80,14 @@
         margin: 50px auto;
     }
     input{
-        max-width: 400px;
+        max-width: 90%;
     }
 }
 
 @media(max-width: 800px) {
+    .header{
+        margin-bottom: 25px;
+    }
 
     .header__img-car {
         display: none;
@@ -92,11 +96,10 @@
     .header__title {
         text-align: center;
         margin-bottom: 15px;
-        font-size: 60px;
+        font-size: 52px;
     }
 
     .header__subtitle {
-        font-size: 32px;
         text-align: center;
         font-size: 24px;
     }
@@ -141,12 +144,19 @@
         text-align: center;
         margin-bottom: 20px;
     }
+    .title{
+        font-size: 30px;
+    }
 
     
 
 }
 
 @media(max-width: 650px) {
+    .header{
+        min-height: 445px;
+    }
+
     .header__content{
         transition: all .5s;
 
@@ -179,10 +189,20 @@
         display: block;
         margin-left: auto;
     }
+    .header__title {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 42px;
+    }
+    .header__subtitle {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
     .services__list{
         margin: 64px auto 0;
-        width: 95%;
-        max-width: 100%;
+        width: 90%;
+        max-width: 95%;
     }
     .information__content{
         padding: 23px 76px 0px 60px
@@ -196,4 +216,48 @@
     .footer__sociale{
         margin-bottom: 15px;
     }
+    ::after, ::before{
+        display: none;
+    }
+    .services__line{
+        display: none;
+    }
+    .services__btn-text{
+        display: none;
+    }
+}
+@media(max-width: 400px){
+    .header__title {
+        font-size: 38px;
+    }
+    .header__text{
+        margin-bottom: 25px;
+    }
+    .header__sociale{
+        margin: 35px auto;
+        width: 250px;
+    }
+    .services__item{
+        padding: 6px 5px 7px 40px;
+    }
+    .information__content{
+        padding: 23px 56px 0px 40px;
+    }
+    input{
+        max-width: 80%;
+    }
+    .btn{
+        width: 200px;
+    }
+    .form__cart-btn{
+        padding: 15px 53px;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .slick-dots button{
+        width: 30px;
+        margin: 0 5px;
+    }
+
 }
