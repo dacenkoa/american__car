@@ -3,6 +3,8 @@
 @import "vars";
 @import "global";
 
+
+
 .header {
     background-image: url(../images/bacg.jpeg);
     min-height: 700px;
@@ -22,6 +24,7 @@
         align-items: center;
         padding-top: 47px;
         margin-bottom: 105px;
+        width: 100%;
     }
 
     .burger__line {
@@ -39,9 +42,18 @@
         transition: all 5s;
         display: none;
     }
-    nav{
-        display: block;
-        padding-top: 20px
+
+    nav {
+        display: flex;
+        padding: 20px ;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #theme-toggle {
+        width: 42px;
+        height: 42px;
+        color: white;
+        background: transparent;
     }
 
     .burger__menu.show {
@@ -68,6 +80,7 @@
         width: 197px;
         height: 53px;
     }
+
 
     &__title {
         @extend %os400;
@@ -122,25 +135,30 @@
     .phone {
         @extend %os400;
         font-size: 36px;
-    }
-    .scrollToTopBtn {
-        display: none;
-        position: fixed;
-        bottom: 70px;
-        right: 40px;
-    }
-    .scrollToTopBtn__img{
-        width: 50px;
-        height: 75px;
-    }
-    .scrollable {
-        overflow-y: scroll;
-    }
-    .showBtn {
-        display: block;
+        margin-right: 13px;
     }
 
-    
+}
+
+.scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    z-index: 99;
+}
+
+.scrollToTopBtn__img {
+    width: 50px;
+    height: 75px;
+}
+
+.scrollable {
+    overflow-y: scroll;
+}
+
+.showBtn {
+    display: block;
 }
 
 

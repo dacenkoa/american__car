@@ -1,20 +1,34 @@
-body{
+body.light-mode {
+
     line-height: 1.2;
     letter-spacing: 1px;
     color: inherit;
     font-family: "Oswald", sans-serif;
     font-style: normal;
-    
+
 }
-.container{
+
+body.dark-mode {
+
+    background-color: $grey;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: inherit;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+}
+
+.container {
     max-width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
 }
-a{
+
+a {
     color: inherit;
     cursor: pointer;
 }
+
 .btn {
     display: block;
     max-width: 250px;
@@ -30,7 +44,8 @@ a{
         color: $akcent;
     }
 }
-.title{
+
+.title {
     @extend %os400;
     color: $violet;
     font-size: 36px;
@@ -38,9 +53,6 @@ a{
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    
-    
-    
     &::after {
         content: "";
         width: 80px;
